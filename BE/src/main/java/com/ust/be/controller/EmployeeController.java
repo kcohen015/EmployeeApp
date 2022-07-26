@@ -18,10 +18,13 @@ import static com.ust.be.model.Employee.updatedEmployee;
 @RequestMapping("api/")
 public class EmployeeController {
 
-    @Autowired
-    private EmployeeRepo employeeRepo;
+    private final EmployeeRepo employeeRepo;
 
-//    http://localhost:8080/api/employees
+    public EmployeeController(EmployeeRepo employeeRepo) {
+        this.employeeRepo = employeeRepo;
+    }
+
+    //    http://localhost:8080/api/employees
     @GetMapping("/employees")
     public List<Employee> getAllEmployees(){
         return employeeRepo.findAll();
