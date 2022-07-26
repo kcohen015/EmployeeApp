@@ -1,4 +1,9 @@
 package com.ust.be.repo;
 
-public interface EmployeeRepo {
+import com.ust.be.model.Employee;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface EmployeeRepo extends JpaRepository<Employee, Long> {
 }

@@ -5,6 +5,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "employees")
 public class Employee {
+    public static Employee updatedEmployee;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
