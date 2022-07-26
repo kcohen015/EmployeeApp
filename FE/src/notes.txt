@@ -9,4 +9,7 @@
 6. EmployeeList template
 7. CreateEmployee Class
 8. CreateEmployee template
-9. 
+    -add Create Button to EmployeeList template
+9. UpdateEmployee Class
+10. UpdateEmployee Template
+11. 
