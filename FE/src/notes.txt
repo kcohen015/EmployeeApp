@@ -1,0 +1,5 @@
+1. create modules
+2. create employee class
+3. install bootstrap and jquery
+4. create employeeService
+5. 
