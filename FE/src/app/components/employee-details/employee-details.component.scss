@@ -1,0 +1,38 @@
+.container {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-size: 18pt;
+        margin: 5px 0 15px;  
+    }
+
+    .card{
+        box-shadow: 10px 10px 8px #888888;
+        margin: 15px;
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                margin: 15px;
+            }
+        }
+
+        .actions{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .btn{
+                margin: 10px;
+                
+            }
+        }
+    }
+}

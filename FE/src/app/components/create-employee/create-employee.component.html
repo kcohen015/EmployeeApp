@@ -1,47 +1,54 @@
-<div class="row">
-    <div class="card col-md-6 offset-md-3 offset-md-3">
-        <div class="row">
-            <h3 class="text-center"> Create Employee </h3>
-            <hr />
-            <div class="card-body">
-                <form class="CreateForm" [formGroup]="CreateForm" (ngSubmit)="onSubmit()">
+<div class="container">
+    <div class="inner-container">
+        <h1> Create Employee </h1>
 
-                    <div class="form-group">
-                        <label> First Name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="First Name" required
-                            formControlName="firstName" [(ngModel)]="employee.firstName" name="firstName">
-                        <div class="errors" *ngIf="firstName && firstName?.errors?.['pattern'] && firstName?.touched">
-                            Must enter a First Name</div>
+        <div class="card w-100">
+            <form class="CreateForm" [formGroup]="CreateForm" (ngSubmit)="onSubmit()">
+
+                <div class="form-group ">
+                    <div class="info card-body">
+                        <span><label> First Name:</label></span>
+                        <span><input type="text" class="form-control" id="firstName" placeholder="First Name" required
+                                formControlName="firstName" [(ngModel)]="employee.firstName" name="firstName"></span>
                     </div>
+                    <div class="errors" *ngIf="firstName && firstName?.errors?.['pattern'] && firstName?.touched">
+                        Must enter a First Name</div>
+                </div>
 
-                    <div class="form-group">
-                        <label> Last Name</label>
-                        <input type="text" class="form-control" id="lastName" [(ngModel)]="employee.lastName"
-                            name="lastName" placeholder="Last Name" required formControlName="lastName">
-                        <div class="errors" *ngIf="lastName && lastName?.errors?.['pattern'] && lastName?.touched">
-                            Must enter a Last Name</div>
+                <div class="form-group">
+                    <div class="info card-body">
+                        <span><label> Last Name:</label></span>
+                        <span><input type="text" class="form-control" id="lastName" [(ngModel)]="employee.lastName"
+                                name="lastName" placeholder="Last Name" required formControlName="lastName"></span>
                     </div>
+                    <div class="errors" *ngIf="lastName && lastName?.errors?.['pattern'] && lastName?.touched">
+                        Must enter a Last Name</div>
+                </div>
 
-                    <div class="form-group">
-                        <label> Position</label>
-                        <input type="text" class="form-control" id="position" [(ngModel)]="employee.position"
-                            name="position" placeholder="Position" required formControlName="position">
-                        <div class="errors" *ngIf="position && position?.errors?.['pattern'] && position?.touched">
-                            Must enter a Position</div>
+                <div class="form-group">
+                    <div class="info card-body">
+                        <span><label> Position:</label></span>
+                        <span><input type="text" class="form-control" id="position" [(ngModel)]="employee.position"
+                                name="position" placeholder="Position" required formControlName="position"></span>
                     </div>
+                    <div class="errors" *ngIf="position && position?.errors?.['pattern'] && position?.touched">
+                        Must enter a Position</div>
+                </div>
 
-                    <div class="form-group">
-                        <label> Email Id</label>
-                        <input type="text" class="form-control" id="emailId" [(ngModel)]="employee.emailId"
-                            name="emailId" placeholder="Email ID" required formControlName="emailId">
-                        <div class="errors" *ngIf="emailId && emailId?.errors?.['pattern'] && emailId?.touched">
-                            Must enter an Email ID</div>
+                <div class="form-group">
+                    <div class="info card-body">
+                        <span><label> Email ID:</label></span>
+                        <span><input type="text" class="form-control" id="emailId" [(ngModel)]="employee.emailId"
+                                name="emailId" placeholder="Email ID" required formControlName="emailId"></span>
                     </div>
-                    <br />
-                    <button class="btn btn-success" type="submit">Submit</button>
+                    <div class="errors" *ngIf="emailId && emailId?.errors?.['pattern'] && emailId?.touched">
+                        Must enter an Email ID</div>
 
-                </form>
-            </div>
+                </div>
+                <br />
+                <button class="btn btn-success" type="submit">Create</button>
+
+            </form>
         </div>
     </div>
 </div>
