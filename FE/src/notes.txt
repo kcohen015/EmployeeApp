@@ -6,3 +6,4 @@
     -display EmployeeList 
     -create new Employee
     -delete Employee
+6. EmployeeList template

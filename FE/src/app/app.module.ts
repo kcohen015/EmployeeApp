@@ -17,7 +17,7 @@ import { HttpClientModule } from "@angular/common/http";
     CreateEmployeeComponent,
     UpdateEmployeeComponent,
     EmployeeListComponent,
-    EmployeeDetailsComponent
+    EmployeeDetailsComponent,
   ],
   imports: [
     BrowserModule,

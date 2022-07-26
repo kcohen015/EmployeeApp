@@ -1,0 +1,5 @@
+on EmployeeListComponent
+-have a table, with card components as the td
+-card components show emp name and avatar
+-click on card to get details
+-in details view have a table with avatar, emp info, actions
