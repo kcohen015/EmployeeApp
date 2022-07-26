@@ -1,1 +1,9 @@
-<p>employee-details works!</p>
+<h1> View Employee Details</h1>
+<div class="card">
+    <img src="../../../assets/avatar-svgrepo-com.svg" alt="John" style="width:50%">
+    <h3 class="full name">{{employee.firstName}}{{employee.lastName}}</h3>
+    <p class="position">{{employee.position}}</p>
+    <p class="emailId">{{employee.emailId}}</p>
+    <button (click)="updateEmployee(employee.id)" class="btn btn-primary"> Update</button>
+    <button (click)="backToList()" class="btn btn-primary"> Back to List</button>
+</div>
